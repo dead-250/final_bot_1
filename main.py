@@ -22,4 +22,4 @@ async def on_message(message):
 	if any(word in msg for word in darsk_commands):
 		await message.channel.send(the_cookie)	
 
-my_secret = os.environ['TOKEN']
+client.run(os.getenv('TOKEN'))
