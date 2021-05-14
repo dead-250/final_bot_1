@@ -19,7 +19,7 @@ async def on_message(message):
 	msg = message.content
 	if message.content.startsWith('hello there'):
 		await message.channel.send('general kenobi!')
-	if any(word in msg for word in darsk_commands):
+	if any(word in msg for word in dark_commands):
 		await message.channel.send(the_cookie)	
 
 client.run(os.environ['TOKEN'])
